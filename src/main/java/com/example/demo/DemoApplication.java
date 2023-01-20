@@ -11,11 +11,12 @@ public class DemoApplication {
 	
 	@GetMapping("/welcome")
 	public String welcome() {
-		return "Hi there! Welcome";
+		return "Hi there! Welcome..";
 	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		System.out.println("Java Upgrade to 17");
 	}
 
 }
