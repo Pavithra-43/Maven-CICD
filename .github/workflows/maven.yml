@@ -3,9 +3,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "feature/git-commit-id" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "feature/git-commit-id" ]
 
 jobs:
   build:
