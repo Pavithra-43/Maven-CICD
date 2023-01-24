@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestGitController {
-	@Value("${git.commit.id}")
-	private String commitId;
+//	@Value("${git.commit.id}")
+//	private String commitId;
 
 	@RequestMapping("/get/file") // rsp->capability type
 	private ResponseEntity<?> trueUpUtility() throws Exception {
@@ -42,8 +42,8 @@ public class TestGitController {
 	@RequestMapping("/demo") // rsp->capability type
 	private String getData() throws Exception {
 
-		String commitid = commitId;
-		System.out.println("commitid = "+commitid);
+		String commitid = "1";//commitId;
+		System.out.println("commitid = "+1);
 
 		return commitid;
 	}
