@@ -20,14 +20,16 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+        
     - name: Build with Maven
       run: mvn clean install
+           mkdir staging && cp target/*.jar staging
            
     - name: Save Artifacts 
       uses: actions/upload-artifact@v2
       with: 
         name: github-actions-artifact
-        path: artifacts
+        path: staging
             
     
     - name: Build & push Docker image
