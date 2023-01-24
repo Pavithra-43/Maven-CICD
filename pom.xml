@@ -52,7 +52,7 @@
 							<dateFormat>MM/dd/yyyy HH:mm:ss Z</dateFormat>
 							<abbrevLength>8</abbrevLength>
 							<generateGitPropertiesFile>true</generateGitPropertiesFile>
-							<generateGitPropertiesFilename>${project.basedir}/src/main/resources/git.properties</generateGitPropertiesFilename>
+							<generateGitPropertiesFilename>${project.basedir}/git.properties</generateGitPropertiesFilename>
 							<!-- <output>${basedir}</output> -->
 						</configuration>
 					</execution>
