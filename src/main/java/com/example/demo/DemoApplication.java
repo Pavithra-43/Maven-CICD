@@ -6,10 +6,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.ClassPathResource;
 
+
 @SpringBootApplication(scanBasePackages = { "com.example.demo" })
-public class CommitIdApplication {
+public class DemoApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CommitIdApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 
     @Bean

@@ -22,8 +22,8 @@ public class CommitInfoController {
     @GetMapping("/commitId")
     public Map<String, String> getCommitId() {
         Map<String, String> result = new HashMap<>();
-        result.put("Commit message", commitMessage);
-        result.put("Commit branch", branch);
+//        result.put("Commit message", commitMessage);
+//        result.put("Commit branch", branch);
         result.put("Commit id", commitId);
         return result;
     }
