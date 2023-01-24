@@ -68,17 +68,20 @@
 					<execution>
 						<id>copy-resources</id>
 						<!-- here the phase you need -->
-						<phase>validate</phase>
+						<phase>process-resources</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
 							<outputDirectory>${basedir}/src/main/resources</outputDirectory>
+							<overwrite>true</overwrite>
 							<resources>
 								<resource>
-									<include>git.properties</include>
 									<directory>${project.build.directory}</directory>
-									<filtering>true</filtering>
+									<includes>
+										<include>git.properties</include>
+									</includes>
+									<!-- <filtering>true</filtering> -->
 								</resource>
 							</resources>
 						</configuration>
@@ -86,7 +89,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-
 
 		<finalName>springboot-image</finalName>
 
