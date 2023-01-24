@@ -53,13 +53,13 @@
 							<abbrevLength>8</abbrevLength>
 							<generateGitPropertiesFile>true</generateGitPropertiesFile>
 							<generateGitPropertiesFilename>${project.basedir}/git.properties</generateGitPropertiesFilename>
-							<!-- <output>${basedir}</output> -->
+							<output>${basedir}</output>
 						</configuration>
 					</execution>
 				</executions>
-				<configuration>
+				<!-- <configuration>
 					<dotGitDirectory>${basedir}/.git</dotGitDirectory>
-				</configuration>
+				</configuration> -->
 			</plugin>
 		</plugins>
 		<resources>
@@ -70,7 +70,7 @@
 				</includes>
 			</resource>
 			<resource>
-				<directory>${basedir}/src/main/resources</directory>
+				<directory>${basedir}/src/main/resources/git.properties</directory>
 			</resource>
 		</resources>
 		<finalName>springboot-image</finalName>
