@@ -25,7 +25,7 @@ public class DemoApplication {
 
 		Properties prop = new Properties();
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		InputStream stream = loader.getResourceAsStream("git.properties");
+		InputStream stream = loader.getResourceAsStream("classpath:git.properties");
 		if (stream != null) {
 			prop.load(stream);
 			String id = prop.getProperty("git.commit.id");
