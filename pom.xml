@@ -48,7 +48,7 @@
 						</goals>
 						<configuration>
 							<verbose>true</verbose>
-							 <useNativeGit>false</useNativeGit>
+							 <useNativeGit>true</useNativeGit>
 							<dateFormat>MM/dd/yyyy HH:mm:ss Z</dateFormat>
 							<abbrevLength>8</abbrevLength>
 							<generateGitPropertiesFile>true</generateGitPropertiesFile>
