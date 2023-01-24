@@ -42,6 +42,7 @@
 				<version>2.1.13</version>
 				<executions>
 					<execution>
+					    <phase>initialize</phase>
 						<id>populate-git-commit-information</id>
 						<goals>
 							<goal>revision</goal>
