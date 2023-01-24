@@ -54,7 +54,7 @@
 							<abbrevLength>8</abbrevLength>
 							<generateGitPropertiesFile>true</generateGitPropertiesFile>
 							<generateGitPropertiesFilename>${project.build.directory}/git.properties</generateGitPropertiesFilename>
-							<output>${project.build.directory}</output>
+							<output>${basedir}</output>
 						</configuration>
 					</execution>
 				</executions>
@@ -74,7 +74,8 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/src/main/resources</outputDirectory>
+							<outputDirectory>${basedir}/src/main/java</outputDirectory>
+							
 							<overwrite>true</overwrite>
 							<resources>
 								<resource>
