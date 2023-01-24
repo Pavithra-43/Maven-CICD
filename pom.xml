@@ -88,8 +88,14 @@
 					</execution>
 				</executions>
 			</plugin>
+			
 		</plugins>
-
+<resources>
+    <resource>
+        <directory>src/main/resources</directory>
+        <targetPath>${basedir}/dist/resources</targetPath>
+    </resource>
+</resources>
 		<finalName>springboot-image</finalName>
 
 	</build>
